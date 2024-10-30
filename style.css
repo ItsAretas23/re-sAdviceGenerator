@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@800&family=Raleway:ital@0;1&display=swap');
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+    color: whitesmoke
+ }
+.attribution a { color: var(--Light-Cyan) }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+:root{
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    font-family: "Manrope",sans-serif;
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+    width: 500px;
+}
+
+.container h1{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 10px;
+}
+
+.container p{
+    margin-bottom:2rem ;
+    color: var(--Light-Cyan);
+}
+
+.container picture{
+    margin-bottom: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    padding: 1rem;
+    background-color: var(--Neon-Green);
+    border: none;
+    border-radius:50%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    position:absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    margin-top: 11px;
+}
+
+button:hover{
+    background-color:var(--Neon-Green);
+    
+}
+
+@media (width<=500px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+
